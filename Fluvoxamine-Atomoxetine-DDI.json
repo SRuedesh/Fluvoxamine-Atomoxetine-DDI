@@ -103,7 +103,7 @@
         },
         {
           "Path": "Organism|Kidney|Intracellular|CYP1A2|Relative expression",
-          "Value": 4.4025157233E-06
+          "Value": 4.4025157233e-06
         },
         {
           "Path": "Organism|Liver|Pericentral|Intracellular|CYP1A2|Relative expression",
@@ -115,7 +115,7 @@
         },
         {
           "Path": "Organism|Lung|Intracellular|CYP1A2|Relative expression",
-          "Value": 2.4947589099E-05
+          "Value": 2.4947589099e-05
         }
       ],
       "Localization": "Intracellular, BloodCellsIntracellular, VascEndosome",
@@ -245,7 +245,7 @@
               "ValueOrigin": {
                 "Source": "ParameterIdentification",
                 "Method": "ParameterIdentification",
-                "Description": "Value updated from 'Lipophilicity, fu, kcat CYP2C19, intestinal perm no sp cl.' on 2021-11-16 08:40"
+                "Description": "Optimized"
               }
             }
           ]
@@ -268,7 +268,11 @@
             {
               "Name": "Lipophilicity",
               "Value": 3.81,
-              "Unit": "Log Units"
+              "Unit": "Log Units",
+              "ValueOrigin": {
+                "Source": "Publication",
+                "Description": "Literature value in, Swain 2012 [47]"
+              }
             }
           ]
         }
@@ -285,7 +289,7 @@
               "ValueOrigin": {
                 "Source": "Publication",
                 "Method": "InVivo",
-                "Description": "Yu 2016"
+                "Description": "Literature value in, Yu 2016 [56]"
               }
             }
           ]
@@ -316,16 +320,16 @@
               "Value": 10.29,
               "Unit": "mg/ml",
               "ValueOrigin": {
-                "Source": "Unknown",
-                "Description": "chemicalize - atomoxetine hydrochloride"
+                "Source": "Publication",
+                "Description": "Literature value in, Swain 2012 [47]"
               }
             },
             {
               "Name": "Reference pH",
               "Value": 7.4,
               "ValueOrigin": {
-                "Source": "Unknown",
-                "Description": "chemicalize - atomoxetine hydrochloride"
+                "Source": "Publication",
+                "Description": ""
               }
             }
           ]
@@ -337,8 +341,13 @@
           "Parameters": [
             {
               "Name": "Specific intestinal permeability (transcellular)",
-              "Value": 5.23E-05,
-              "Unit": "cm/min"
+              "Value": 5.23e-05,
+              "Unit": "cm/min",
+              "ValueOrigin": {
+                "Source": "ParameterIdentification",
+                "Method": "ParameterIdentification",
+                "Description": "Optimized"
+              }
             }
           ]
         }
@@ -348,24 +357,25 @@
           "Type": "Base",
           "Pka": 9.8,
           "ValueOrigin": {
-            "Source": "Unknown"
+            "Source": "Publication",
+            "Description": "Literature value in, Swain 2012 [47]"
           }
         }
       ],
       "Processes": [
         {
           "InternalName": "MetabolizationLiverMicrosomes_MM",
-          "DataSource": "Ring 2001 (4-hydroxylation)",
+          "DataSource": "Ring 2002 (4-hydroxylation)",
           "Molecule": "CYP2D6",
           "Parameters": [
             {
               "Name": "In vitro Vmax for liver microsomes",
-              "Value": 115.0,
+              "Value": 115,
               "Unit": "pmol/min/mg mic. protein"
             },
             {
               "Name": "Content of CYP proteins in liver microsomes",
-              "Value": 10.0,
+              "Value": 10,
               "Unit": "pmol/mg mic. protein",
               "ValueOrigin": {
                 "Source": "Unknown"
@@ -374,7 +384,12 @@
             {
               "Name": "Km",
               "Value": 2.3,
-              "Unit": "µmol/l"
+              "Unit": "µmol/l",
+              "ValueOrigin": {
+                "Source": "Publication",
+                "Method": "InVitro",
+                "Description": "Literature value in, Ring et al. 2002 [39]"
+              }
             },
             {
               "Name": "kcat",
@@ -383,7 +398,7 @@
               "ValueOrigin": {
                 "Source": "ParameterIdentification",
                 "Method": "ParameterIdentification",
-                "Description": "Value updated from 'Lipophilicity, fu, kcat CYP2C19, intestinal perm no sp cl.' on 2021-11-16 08:40"
+                "Description": "Optimized"
               }
             }
           ]
@@ -395,12 +410,12 @@
           "Parameters": [
             {
               "Name": "In vitro Vmax for liver microsomes",
-              "Value": 0.0,
+              "Value": 0,
               "Unit": "pmol/min/mg mic. protein"
             },
             {
               "Name": "Content of CYP proteins in liver microsomes",
-              "Value": 10.0,
+              "Value": 10,
               "Unit": "pmol/mg mic. protein",
               "ValueOrigin": {
                 "Source": "Unknown"
@@ -409,7 +424,12 @@
             {
               "Name": "Km",
               "Value": 2.3,
-              "Unit": "µmol/l"
+              "Unit": "µmol/l",
+              "ValueOrigin": {
+                "Source": "Publication",
+                "Method": "InVitro",
+                "Description": "Same CYP2D6 Km as base model, Ring et al. 2002 [39]"
+              }
             }
           ]
         },
@@ -420,7 +440,11 @@
           "Parameters": [
             {
               "Name": "GFR fraction",
-              "Value": 1.0
+              "Value": 1,
+              "ValueOrigin": {
+                "Source": "Other",
+                "Description": "Assumed"
+              }
             }
           ]
         },
@@ -431,12 +455,12 @@
           "Parameters": [
             {
               "Name": "In vitro Vmax for liver microsomes",
-              "Value": 0.0,
+              "Value": 0,
               "Unit": "pmol/min/mg mic. protein"
             },
             {
               "Name": "Content of CYP proteins in liver microsomes",
-              "Value": 10.0,
+              "Value": 10,
               "Unit": "pmol/mg mic. protein",
               "ValueOrigin": {
                 "Source": "Unknown"
@@ -445,16 +469,21 @@
             {
               "Name": "Km",
               "Value": 2.3,
-              "Unit": "µmol/l"
+              "Unit": "µmol/l",
+              "ValueOrigin": {
+                "Source": "Publication",
+                "Method": "InVitro",
+                "Description": "Same CYP2D6 Km as base model, Ring et al. 2002 [39]"
+              }
             },
             {
               "Name": "kcat",
               "Value": 102.25,
               "Unit": "1/min",
               "ValueOrigin": {
-                "Source": "Other",
-                "Method": "ManualFit",
-                "Description": "AS-Model"
+                "Source": "ParameterIdentification",
+                "Method": "ParameterIdentification",
+                "Description": "Optimized AS=2 baseline, Rüdesheim et al. 2022, main article Table 2"
               }
             }
           ]
@@ -466,12 +495,12 @@
           "Parameters": [
             {
               "Name": "In vitro Vmax for liver microsomes",
-              "Value": 0.0,
+              "Value": 0,
               "Unit": "pmol/min/mg mic. protein"
             },
             {
               "Name": "Content of CYP proteins in liver microsomes",
-              "Value": 10.0,
+              "Value": 10,
               "Unit": "pmol/mg mic. protein",
               "ValueOrigin": {
                 "Source": "Unknown"
@@ -480,7 +509,12 @@
             {
               "Name": "Km",
               "Value": 2.3,
-              "Unit": "µmol/l"
+              "Unit": "µmol/l",
+              "ValueOrigin": {
+                "Source": "Publication",
+                "Method": "InVitro",
+                "Description": "Same CYP2D6 Km as base model, Ring et al. 2002 [39]"
+              }
             },
             {
               "Name": "kcat",
@@ -489,7 +523,7 @@
               "ValueOrigin": {
                 "Source": "Other",
                 "Method": "ManualFit",
-                "Description": "AS-Model"
+                "Description": "CYP2D6 activity-score scaling, Rüdesheim et al. 2022, main article Table 2"
               }
             }
           ]
@@ -501,12 +535,12 @@
           "Parameters": [
             {
               "Name": "In vitro Vmax for liver microsomes",
-              "Value": 0.0,
+              "Value": 0,
               "Unit": "pmol/min/mg mic. protein"
             },
             {
               "Name": "Content of CYP proteins in liver microsomes",
-              "Value": 10.0,
+              "Value": 10,
               "Unit": "pmol/mg mic. protein",
               "ValueOrigin": {
                 "Source": "Unknown"
@@ -515,7 +549,12 @@
             {
               "Name": "Km",
               "Value": 2.3,
-              "Unit": "µmol/l"
+              "Unit": "µmol/l",
+              "ValueOrigin": {
+                "Source": "Publication",
+                "Method": "InVitro",
+                "Description": "Same CYP2D6 Km as base model, Ring et al. 2002 [39]"
+              }
             },
             {
               "Name": "kcat",
@@ -524,7 +563,7 @@
               "ValueOrigin": {
                 "Source": "Other",
                 "Method": "ManualFit",
-                "Description": "AS-Model"
+                "Description": "CYP2D6 activity-score scaling, Rüdesheim et al. 2022, main article Table 2"
               }
             }
           ]
@@ -536,12 +575,12 @@
           "Parameters": [
             {
               "Name": "In vitro Vmax for liver microsomes",
-              "Value": 97.0,
+              "Value": 97,
               "Unit": "pmol/min/mg mic. protein"
             },
             {
               "Name": "Content of CYP proteins in liver microsomes",
-              "Value": 19.0,
+              "Value": 19,
               "Unit": "pmol/mg mic. protein",
               "ValueOrigin": {
                 "Source": "Unknown"
@@ -549,8 +588,13 @@
             },
             {
               "Name": "Km",
-              "Value": 83.0,
-              "Unit": "µmol/l"
+              "Value": 83,
+              "Unit": "µmol/l",
+              "ValueOrigin": {
+                "Source": "Publication",
+                "Method": "InVitro",
+                "Description": "Literature value in, Ring et al. 2002 [39]"
+              }
             },
             {
               "Name": "kcat",
@@ -559,37 +603,48 @@
               "ValueOrigin": {
                 "Source": "ParameterIdentification",
                 "Method": "ParameterIdentification",
-                "Description": "Value updated from 'Lipophilicity, fu, kcat CYP2C19, intestinal perm no sp cl.' on 2021-11-16 08:40"
+                "Description": "Optimized"
               }
             }
           ]
         },
         {
-          "InternalName": "CompetitiveInhibition",
-          "DataSource": "Sauer 2004",
+          "InternalName": "MetabolizationLiverMicrosomes_MM",
+          "DataSource": "AS=1",
           "Molecule": "CYP2D6",
           "Parameters": [
             {
-              "Name": "Ki",
-              "Value": 3.6,
+              "Name": "In vitro Vmax for liver microsomes",
+              "Value": 0,
+              "Unit": "pmol/min/mg mic. protein"
+            },
+            {
+              "Name": "Content of CYP proteins in liver microsomes",
+              "Value": 10,
+              "Unit": "pmol/mg mic. protein",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Km",
+              "Value": 2.3,
               "Unit": "µmol/l",
               "ValueOrigin": {
                 "Source": "Publication",
-                "Method": "Unknown",
-                "Description": "Sauer 2004"
+                "Method": "InVitro",
+                "Description": "Same CYP2D6 Km as base model, Ring et al. 2002 [39]"
               }
-            }
-          ]
-        },
-        {
-          "InternalName": "CompetitiveInhibition",
-          "DataSource": "Sauer 2004",
-          "Molecule": "CYP3A4",
-          "Parameters": [
+            },
             {
-              "Name": "Ki",
-              "Value": 34.0,
-              "Unit": "µmol/l"
+              "Name": "kcat",
+              "Value": 39.7,
+              "Unit": "1/min",
+              "ValueOrigin": {
+                "Source": "Other",
+                "Method": "ManualFit",
+                "Description": "CYP2D6 activity-score scaling, Rüdesheim et al. 2022, main article Table 2"
+              }
             }
           ]
         }
@@ -602,7 +657,11 @@
         {
           "Name": "Molecular weight",
           "Value": 255.35,
-          "Unit": "g/mol"
+          "Unit": "g/mol",
+          "ValueOrigin": {
+            "Source": "Publication",
+            "Description": "Literature value in, Zhong et al. 2013 [57]"
+          }
         }
       ]
     },
@@ -662,7 +721,7 @@
           "Parameters": [
             {
               "Name": "Specific intestinal permeability (transcellular)",
-              "Value": 2.7380788903E-06,
+              "Value": 2.7380788903e-06,
               "Unit": "dm/min",
               "ValueOrigin": {
                 "Source": "ParameterIdentification"
@@ -1047,8 +1106,8 @@
         "Todor 2017 - Atomoxetine - po, 25 mg, sd"
       ],
       "Solver": {
-        "AbsTol": 1E-15,
-        "RelTol": 1E-10
+        "AbsTol": 1e-15,
+        "RelTol": 1e-10
       },
       "OutputSchema": [
         {
@@ -1228,8 +1287,8 @@
         "Todor 2017 - DDI - Fluvoxamine-Atomoxetine - po, 25 mg, sd, day 6"
       ],
       "Solver": {
-        "AbsTol": 1E-15,
-        "RelTol": 1E-10
+        "AbsTol": 1e-15,
+        "RelTol": 1e-10
       },
       "OutputSchema": [
         {
