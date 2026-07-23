@@ -1122,7 +1122,7 @@
             },
             {
               "Name": "End time",
-              "Value": 24.0,
+              "Value": 36.0,
               "Unit": "h",
               "ValueOrigin": {
                 "Source": "Unknown"
@@ -1303,7 +1303,7 @@
             },
             {
               "Name": "End time",
-              "Value": 160.0,
+              "Value": 156.0,
               "Unit": "h",
               "ValueOrigin": {
                 "Source": "Unknown"
