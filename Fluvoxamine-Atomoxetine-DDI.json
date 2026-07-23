@@ -1173,7 +1173,7 @@
           ],
           "Processes": [
             {
-              "Name": "CYP2D6-Ring 2001 (4-hydroxylation)",
+              "Name": "CYP2D6-Ring 2002 (4-hydroxylation)",
               "MoleculeName": "CYP2D6"
             },
             {
@@ -1385,7 +1385,7 @@
           ],
           "Processes": [
             {
-              "Name": "CYP2D6-Ring 2001 (4-hydroxylation)",
+              "Name": "CYP2D6-Ring 2002 (4-hydroxylation)",
               "MoleculeName": "CYP2D6"
             },
             {
