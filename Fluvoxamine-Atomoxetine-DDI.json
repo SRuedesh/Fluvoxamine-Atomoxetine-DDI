@@ -478,7 +478,7 @@
             },
             {
               "Name": "kcat",
-              "Value": 102.25,
+              "Value": 103.82,
               "Unit": "1/min",
               "ValueOrigin": {
                 "Source": "ParameterIdentification",
@@ -518,7 +518,7 @@
             },
             {
               "Name": "kcat",
-              "Value": 16.87,
+              "Value": 16.79,
               "Unit": "1/min",
               "ValueOrigin": {
                 "Source": "Other",
@@ -558,7 +558,7 @@
             },
             {
               "Name": "kcat",
-              "Value": 53.68,
+              "Value": 53.44,
               "Unit": "1/min",
               "ValueOrigin": {
                 "Source": "Other",
