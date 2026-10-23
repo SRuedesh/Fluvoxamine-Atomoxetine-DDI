@@ -884,17 +884,17 @@
         },
         {
           "InternalName": "CompetitiveInhibition",
-          "DataSource": "Crewe 1992",
+          "DataSource": "Diakonhjemmet Hospital (bindingdb.org, desipramine oxidation)",
           "Molecule": "CYP2D6",
           "Parameters": [
             {
               "Name": "Ki",
-              "Value": 8.2,
+              "Value": 1.7,
               "Unit": "µmol/l",
               "ValueOrigin": {
                 "Source": "Publication",
                 "Method": "InVitro",
-                "Description": "Crewe 1992"
+                "Description": "Diakonhjemmet Hospital (bindingdb.org), as in Fluvoxamine-Quinidine-DDI"
               }
             }
           ]
@@ -1560,7 +1560,7 @@
           "CompoundName": "Atomoxetine"
         },
         {
-          "Name": "CYP2D6-Crewe 1992",
+          "Name": "CYP2D6-Diakonhjemmet Hospital (bindingdb.org, desipramine oxidation)",
           "MoleculeName": "CYP2D6",
           "CompoundName": "Fluvoxamine"
         },
